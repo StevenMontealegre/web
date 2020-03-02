@@ -6,77 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> James Mont:) </title>
     <!-- favicon -->
-    <link href="https://fonts.googleapis.com/css?family=Lora|Odibee+Sans|Oxanium|Trade+Winds&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="">
+   <link href="https://fonts.googleapis.com/css?family=Lacquer|Mukta&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="images/mi-logo.jpg" href="images/mi-logo.jpg">
 </head>
 <body>
     <header>
-        <div>
-            <figure>
-                <img src="" alt="mi-logo">
+        <div class="header detail">
+            <figure class="image-detail">
+                <img class="mi-logo" src="images/mi-logo.jpg"" alt="mi-logo">
             </figure>
-            <nav>
+            <nav class="nav-detail">
                 <ol>
-                    <li>
-                        <a href="\Users\mont_\Documents\Instalaciones-necesarias.pdf"> Portafolio</a>
-                    </li>
-                    <li>
-                        <!-- # enlace interno -->
-                        <a href="#portafolio"> Eventos</a>
-                    </li>
-                    <li>
-                        <a href="#trabajemos"> Trabajemos juntos</a>
-                    </li>
+                    <li> <a href="\Users\mont_\Documents\Instalaciones-necesarias.pdf"> Portafolio</a></li>
+                    <!-- # enlace interno -->
+                    <li><a href="#portafolio"> Eventos</a></li>
+                    <li><a href="#trabajemos"> Trabajemos juntos</a></li>
                 </ol>
             </nav> 
         </div>
     </header>
 
-    <section> 
-        <h1> Hola soy <strong> James Montealegre </strong>  desarrollador <br>
+    <section class="hero"> 
+        <h1> Hola soy <strong> James Montealegre </strong><br>  desarrollador
              <strong> Frontend </strong> con <br> pasión por la 
              <strong> enseñanza </strong></h1>
-             <img src="" alt="Imagen">
+             <!-- <img src="images/monte.png" alt="mi-foto"> -->
     </section>   
 
-    <section id="portafolio">
-        <h1> Portafolio (Proyectos destacados) </h1>
-        <article>
-            <h3> Platzi video </h3> 
-        <h6> Angular / Desarrollo Frontend </h6>
-
-        <p> <small>  <strong> Fecha: </strong> 05/02/20 </small> </p>
-        </article>   
+    <section id="portafolio" class="project">
+        <div class="portafolio-detail">
+            <h2> Portafolio (Proyectos destacados) </h2>
+            <article >
+                <h3> Platzi video </h3> 
+                <h6> Angular / Desarrollo Frontend </h6>
+                <p> Platzi.com es una plataforma de educación online, que busca ofrecer contenido profesional de calidad y accesible.
+                    Cuenta con más de 100 empleados o colaboradores, más de 700 mil estudiantes y ha sido merecedora de diferentes premios.
+                    Disponible principalmente en idioma español (también inglés y portugues). Su audiencia en su mayoría es de Latinoamérica y España.</p>
+            </article>  
+        </div>
+        
+            <div class="image-detail">
+            <img src="images/logo-platzi.jpg" alt="Logotipo de platzi">
+        </div>
+    
+        <p class="portafolio-detail"> <small>  <strong> Fecha: </strong> 05/02/20 </small> </p>
+            
     </section>  
 
-    <section id="trabajemos">
-        <h2> Más sobre mi experiencia </h2>
-        <!-- contenedor para imagenes-->
-        <article>
-            <figure>
-                <img src="" alt="Imagen2">
-            </figure>
-            <h3> Platziconf 2018 </h3>
-            <p> Evento de innovación y nuevas tecnologías</p>
-            <a href="https://youtu.be/A9WHpDefTsw" target="_blank"> ver video</a>
-        </article>
+    <section id="trabajemos" class="experience">
+        <div class="experience-detail">
+            <h2> Más sobre mi experiencia </h2>
+            <!-- contenedor para imagenes-->
+            <article>
+                <figure>
+                    <img src="" alt="Imagen2">
+                </figure>
+                <h3> Platziconf 2018 </h3>
+                <p> Evento de innovación y nuevas tecnologías</p>
+                <a href="https://youtu.be/A9WHpDefTsw" target="_blank"> ver video</a>
+            </article>    
+        </div>
     </section> 
-    <section> 
-        <div>
+    <section class="information"> 
+        <div class="information-detail">
             <h3> ¿Quieres recibir correos informativos? </h3>
             <label for="Si"> SI </label>
             <input type="checkbox" id="Si">
             <label for="No"> NO </label>
             <input type="checkbox" id="No">
 
+            <form action="/subscribe">
+    
+                <label for="email"> Déjame tu e-mail</label>
+                <!-- el for del label se conecta con el id del input -->
+                <input type="text" placeholder="e-mail"id="email">
+                <input type="submit" value="Enviar">
+            </form>
         </div>
-        <form action="/subscribe">
-
-            <label for="email"> Déjame tu e-mail</label>
-            <!-- el for del label se conecta con el id del input -->
-            <input type="text" placeholder="e-mail"id="email">
-            <input type="submit" value="Enviar">
-        </form>
     </section>
     <footer> footer </footer>    
 </body>
